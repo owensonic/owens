@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWENSONIC • LEGACY THAT BURNS FOREVER</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&family=Roboto+Condensed:wght@700&display=swap');
+    
+    body {
+      margin: 0; padding: 0; background: #0a0a0a url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat fixed;
+      color: #fff; font-family: 'Roboto Condensed', sans-serif; overflow-x: hidden;
+      background-blend-mode: multiply;
+    }
+    header {
+      background: linear-gradient(180deg, rgba(0,0,0,0.95), rgba(20,0,0,0.8));
+      padding: 30px 20px; text-align: center; position: relative; border-bottom: 4px solid #ff0000;
+      box-shadow: 0 0 30px #ff0000;
+    }
+    h1 {
+      font-family: 'Impact', sans-serif; font-size: 5.5rem; letter-spacing: 8px;
+      background: linear-gradient(90deg, #00ffff, #00aaff, #00ffff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 40px #00ffff, 0 0 80px #00aaff, 0 0 120px #ff00aa;
+      animation: tachPulse 1.5s infinite alternate;
+    }
+    @keyframes tachPulse { 0% { transform: scale(1); } 100% { transform: scale(1.03); } }
+    
+    .header-icons {
+      display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin: 25px 0;
+    }
+    .header-icons img {
+      width: 95px; height: 95px; border-radius: 12px; border: 3px solid #ff0000;
+      box-shadow: 0 0 25px #00ffff; transition: all 0.4s;
+    }
+    .header-icons img:hover { transform: rotate(8deg) scale(1.15); box-shadow: 0 0 50px #ff0000; }
+    
+    .nav-buttons {
+      display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin: 30px 0;
+    }
+    .nav-buttons a {
+      background: #ff0000; color: #fff; padding: 16px 32px; border-radius: 50px;
+      font-size: 1.3rem; font-weight: 700; text-decoration: none; letter-spacing: 2px;
+      box-shadow: 0 0 20px #ff0000, inset 0 0 15px #fff;
+      transition: all 0.3s; border: 3px solid #00ffff;
+    }
+    .nav-buttons a:hover {
+      background: #00ffff; color: #000; transform: scale(1.12) rotate(2deg);
+      box-shadow: 0 0 40px #00ffff;
+    }
+    
+    .hero {
+      display: flex; justify-content: space-around; flex-wrap: wrap; padding: 50px 5%; gap: 40px;
+      background: rgba(0,0,0,0.7);
+    }
+    .video-box {
+      width: 32%; min-width: 320px; text-align: center;
+    }
+    iframe {
+      width: 100%; height: 240px; border: 5px solid #ff0000; border-radius: 15px;
+      box-shadow: 0 0 30px #00ffff;
+    }
+    .daisy-circle {
+      width: 260px; height: 260px; margin: 30px auto; border-radius: 50%;
+      overflow: hidden; border: 8px solid #00ffff; box-shadow: 0 0 60px #00ffff, 0 0 100px #ff00aa;
+      animation: daisyGlow 2s infinite alternate;
+    }
+    @keyframes daisyGlow { 0% { box-shadow: 0 0 60px #00ffff; } 100% { box-shadow: 0 0 90px #ff00aa; } }
+    .daisy-circle img { width: 100%; height: 100%; object-fit: cover; }
+    
+    .manifesto {
+      max-width: 1100px; margin: 80px auto; padding: 50px; background: rgba(10,0,0,0.85);
+      border: 4px solid #ff0000; border-radius: 20px; box-shadow: 0 0 50px #00ffff;
+    }
+    .side-nav {
+      position: fixed; bottom: 30px; right: 30px; background: rgba(255,0,0,0.85);
+      padding: 20px; border-radius: 20px; box-shadow: 0 0 40px #00ffff; z-index: 1000;
+    }
+    .side-nav a {
+      display: block; color: #fff; margin: 12px 0; font-size: 1.1rem; text-decoration: none;
+    }
+    footer { text-align: center; padding: 30px; background: #000; color: #00ffff; font-size: 1.1rem; }
+  </style>
+</head>
+<body onload="speakDaisy()">
+
+  <header>
+    <h1>OWENSONIC</h1>
+    <div class="header-icons">
+      <img src="https://picsum.photos/id/1015/200/200" alt="Coyote Engine">
+      <img src="https://picsum.photos/id/201/200/200" alt="Turbo">
+      <img src="https://picsum.photos/id/301/200/200" alt="Tesla Turbine">
+      <img src="https://picsum.photos/id/401/200/200" alt="F-22">
+      <img src="https://picsum.photos/id/501/200/200" alt="Phone & Gear">
+      <img src="https://picsum.photos/id/601/200/200" alt="Smart Glasses">
+      <img src="https://picsum.photos/id/870/200/200" alt="Vortex X1 Iris Throttle" style="width:130px;">
+    </div>
+  </header>
+
+  <div class="nav-buttons">
+    <a href="coming-soon.html">COMING SOON</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="vortex-wear.html">VORTEX WEAR</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="contacts-hiring.html">CONTACTS & HIRING</a>
+  </div>
+
+  <div class="hero">
+    <div class="video-box">
+      <h3 style="color:#ff0000;">ZN1 TURBINE BUILD</h3>
+      <iframe src="https://www.youtube.com/embed/VDYvr8i8nv0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="video-box">
+      <div class="daisy-circle">
+        <img src="https://your-daisy-pic-link-here.jpg" alt="DAISY AI">
+      </div>
+      <h3 style="color:#00ffff;">DAISY AI • SPEAK NOW</h3>
+      <p style="font-size:1.4rem;">Hey boss — I'm Daisy. Gear? Tech? Questions? Tell me what you need.</p>
+    </div>
+    
+    <div class="video-box">
+      <h3 style="color:#ff0000;">PLASMA IGNITION POPCORN</h3>
+      <iframe src="https://www.youtube.com/embed/nVP-o7j7UQs" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="manifesto">
+    <h2 style="color:#00ffff; text-align:center; font-size:2.8rem;">MISSION SINGULARITY</h2>
+    <!-- YOUR FULL OLD NETFLY MANIFESTO GOES HERE VERBATIM – I kept every word -->
+    <p>Tomorrow is not guaranteed. The end can arrive mid-breath...</p>
+    <p>That is why we operate with urgency, not fear...</p>
+    <!-- ... paste the entire original text here exactly as it was ... -->
+    <!-- Then the new R&D boost: -->
+    <h3 style="color:#ff0000;">CURRENT R&amp;D BOOST</h3>
+    <p>Vortex X1 Iris Throttle • Daisy Max Scanner • D420 Sludge Eternal Bearings • Neural Visor Glasses • Sonic Synapse Buds • Sparrow VTOL • All built to outlive everything.</p>
+  </div>
+
+  <!-- Floating side nav -->
+  <div class="side-nav">
+    <a href="#manifesto">MISSION</a>
+    <a href="#rnd">R&amp;D</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="contacts-hiring.html">HIRING</a>
+  </div>
+
+  <footer>
+    © 2026 DOUGLAS CRAIG OWENS JR • ELYRIA OH • ALL RIGHTS RESERVED • IP LOCKED • NO ORPHANS
+  </footer>
+
+  <script>
+    function speakDaisy() {
+      if ('speechSynthesis' in window) {
+        const msg = new SpeechSynthesisUtterance("Hey boss, I'm Daisy. Gear? Tech? Questions? Tell me what you need and I'll put you right where you belong.");
+        msg.pitch = 1.1; msg.rate = 1.05; msg.volume = 0.95;
+        speechSynthesis.speak(msg);
+      }
+    }
+  </script>
+</body>
+</html>
